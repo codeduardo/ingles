@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Two -->
+<section id="two" class="wrapper style2 fade-up">
+    <div class="inner">
+        <h2>Expressions</h2>
+        <div class="features">
+            {% for e in expressions%}
+                <section>
+                    <span class="icon solid major fa-gem"></span>
+                    <h3>{{e.title}}</h3>
+                    <h4 style="color: #ffa4de;">{{e.meaning}}</h4>
+                    <p style="font-weight: bold;">{{e.example}}</p>
+                </section>
+            {% endfor %}            
+        </div>
+        <ul class="actions">
+            <li><a href="/admin/Expression/expression/" class="button">Add expression</a></li>
+        </ul>
+    </div>
+</section>      
+{% endblock content %}
+
+
+    

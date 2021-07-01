@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Two -->
+<section id="two" class="wrapper style4 fade-up">
+    <div class="inner">
+        <h2 style="text-align:center; text-transform: uppercase;">List of Words</h2>
+        <div class="features">
+            <section >
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>WORD</th>
+                            <th>MEANING</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-transform:capitalize;">
+                        {% for w in words %}
+                            <tr>
+                                <th>{{w.name}}</th>
+                                <td>{{w.meaning}}</td>
+                            </tr>
+                        {% endfor %}
+                      
+                    </tbody>
+                  </table>
+            </section>
+            
+        </div>
+        <ul class="actions">
+            <li><a href="/admin/Word/word/" class="button">Add Word</a></li>
+        </ul>
+    </div>
+</section>
+{% endblock content %}
+    
