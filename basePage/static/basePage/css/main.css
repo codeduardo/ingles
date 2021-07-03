@@ -24,6 +24,14 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
+.morado{
+	background-color: #222831;
+}	
+.lchica{
+	font-size: 0.9em  ;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
