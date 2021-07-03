@@ -6,6 +6,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.show_expr,name="Expression"),
-    path('/delete_expr/<int:id>',views.del_expr,name="del_expr"),
+    path('delete_expr/<int:id>/',views.del_expr,name="del_expr"),
 ]
 
